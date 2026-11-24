@@ -1,0 +1,8 @@
+{
+  "label": "Perisai",
+  "item_id": 3,
+  "score": 0.9802630543708801,
+  "model": "neji_cnn_v2.keras",
+  "inference_ms": 122.19,
+  "sha256": "23b6583eaca50a4d1f6119214de213d2aa14467d8e125eb5797fd79911d65dc9"
+}

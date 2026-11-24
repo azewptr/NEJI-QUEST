@@ -1,0 +1,35 @@
+HASIL UJI PERBAIKAN UNGGAH
+Tanggal 18 November 2026
+
+Lingkungan terpisah Windows, Python 3.12, TensorFlow 2.20.0, Keras 3.13.2.
+Uji backend memakai FastAPI TestClient dengan endpoint /api/predict.
+Gambar asli diproses menggunakan model neji_cnn_v2.keras dari ZIP pengguna.
+
+PASS ramuan_03.png -> Ramuan, item_id 1, skor 0.993693470954895
+PASS perisai_01.png -> Perisai, item_id 3, skor 0.997543215751648
+PASS senjata_01.png -> Senjata, item_id 2, skor 0.9958230257034302
+Skor adalah keluaran model pada masing-masing gambar uji ini.
+
+PASS simulasi TypeError pemuatan model -> JSON HTTP 503
+PASS simulasi RuntimeError model -> JSON HTTP 503
+PASS gambar rusak -> JSON HTTP 400
+PASS 5 pemeriksaan parser frontend menggunakan Node.js
+  - JSON sukses
+  - respons teks HTTP 500
+  - JSON error HTTP 503
+  - respons HTML pada HTTP 200
+  - JSON validasi HTTP 422
+PASS pemeriksaan sintaks Python dan prioritas .venv pada peluncur.
+
+Batas verifikasi
+Pengujian ini belum mencakup interaksi browser dengan MetaMask atau transaksi
+Sepolia. Traceback asli dari server pengguna belum tersedia, sehingga penyebab
+tepat error server pada laptop pengguna belum dapat dipastikan.
+Paket ini mengunci kompatibilitas Keras, memperbaiki pemilihan lingkungan,
+dan menangani error backend serta parsing respons frontend.
+
+Ulangi parser
+node scripts/test_response.cjs
+
+Ulangi backend dalam lingkungan pengujian yang memiliki httpx
+python scripts/test_upload.py PATH_GAMBAR_RAMUAN PATH_GAMBAR_PERISAI PATH_GAMBAR_SENJATA

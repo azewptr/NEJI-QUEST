@@ -1,0 +1,57 @@
+
+> neji-quest-v2@1.0.0 coverage
+> hardhat coverage
+
+
+Version
+=======
+> solidity-coverage: v0.8.14
+
+Instrumenting for coverage...
+=============================
+
+> NejiInventory.sol
+
+Compilation:
+============
+
+Compiled 14 Solidity files successfully (evm target: paris).
+
+Network Info
+============
+> HardhatEVM: v2.22.18
+> network:    hardhat
+
+
+
+  Inventori Neji Quest
+    √ menerbitkan dan memperbarui saldo
+    √ menolak mint tanpa peran
+    √ menolak penerima nol
+    √ menolak jumlah nol
+    √ menolak melebihi kuota tanpa mengubah state
+    √ membaca metadata IPFS
+    √ memindahkan saldo pemain
+    √ menolak transfer tanpa izin
+    √ menolak transfer ke alamat nol
+    √ menolak transfer melebihi saldo
+    √ memancarkan TransferSingle sesuai mint
+    √ membekukan konfigurasi yang sudah terbit
+    √ menolak konfigurasi tanpa izin
+    √ menolak ID kuota dan URI yang tidak sah
+    √ menolak pembacaan dan mint item belum terdaftar
+    √ memancarkan konfigurasi dan mendukung ERC1155
+
+
+  16 passing (2s)
+
+--------------------|----------|----------|----------|----------|----------------|
+File                |  % Stmts | % Branch |  % Funcs |  % Lines |Uncovered Lines |
+--------------------|----------|----------|----------|----------|----------------|
+ contracts\         |      100 |      100 |      100 |      100 |                |
+  NejiInventory.sol |      100 |      100 |      100 |      100 |                |
+--------------------|----------|----------|----------|----------|----------------|
+All files           |      100 |      100 |      100 |      100 |                |
+--------------------|----------|----------|----------|----------|----------------|
+
+> Istanbul reports written to ./coverage/ and ./coverage.json

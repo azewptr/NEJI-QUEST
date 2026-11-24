@@ -1,0 +1,28 @@
+
+> neji-quest-v2@1.0.0 test
+> hardhat test
+
+Compiled 14 Solidity files successfully (evm target: paris).
+
+
+  Inventori Neji Quest
+    √ menerbitkan dan memperbarui saldo
+    √ menolak mint tanpa peran
+    √ menolak penerima nol
+    √ menolak jumlah nol
+    √ menolak melebihi kuota tanpa mengubah state
+    √ membaca metadata IPFS
+    √ memindahkan saldo pemain
+    √ menolak transfer tanpa izin
+    √ menolak transfer ke alamat nol
+    √ menolak transfer melebihi saldo
+    √ memancarkan TransferSingle sesuai mint
+    √ membekukan konfigurasi yang sudah terbit
+    √ menolak konfigurasi tanpa izin
+    √ menolak ID kuota dan URI yang tidak sah
+    √ menolak pembacaan dan mint item belum terdaftar
+    √ memancarkan konfigurasi dan mendukung ERC1155
+
+
+  16 passing (3s)
+
